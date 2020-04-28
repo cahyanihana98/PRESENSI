@@ -1,6 +1,7 @@
-
-<h1 align="center">Daftar Presensi</h1>
-<table border="1" align="center">
+<link rel="stylesheet" type="text/css" href="Stylesheet03.css">
+<link rel="stylesheet" type="text/css" href="Stylesheet02.css">
+<div class="tab" align="center"><h1 align="center">Daftar Presensi</h1></div> 
+<table align="center">
     <thead>
    	<tr>
     	<th>Nama Presensi</th>
@@ -25,5 +26,6 @@
 		<?php } ?>
 	</table>
 </br>
-<a href = 'home.php'> Kembali </a></br>
-<a href = 'tambahagenda.html'> Tambahkan Presensi </a>
+
+<div class="card" align="center"><a href = 'home.php' class="Menu"> Kembali </a></br></div> 
+<div class="card" align="center"><a href = 'tambahagenda.html' class="Menu"> Tambahkan Presensi </a></div> 
