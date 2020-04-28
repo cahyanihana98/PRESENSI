@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
+ <link rel="stylesheet" type="text/css" href="Stylesheet01.css">
 <head>
 	<title>Tambah Presensi</title>
 </head>
 <body>
-
-	<h2> TAMBAHKAN PRESENSI </h2></br>
-	<form action="tambahagenda.php" method="post">
-		<label>Nama Presensi</label>
-		<input type="text" name="npresensi" class="form-control" required></br>
-		<label>Penanggung Jawab</label>
-		<input type="text" name="pj" class="form-control" required></br>
-		<label>Tanggal</label>
-		<input type="date" name="tanggal" class="form-control" required></br>
-		
-		<input type="submit" value="Buat">
-	</form>
+	<div class="Head"><h2 align="left" class="HEADING"> TAMBAHKAN PRESENSI </h2></br></div> 
+	
+	<div>
+		<form action="tambahagenda.php" method="post">
+		<table align="center">
+			<tr><td><input type="text" name="npresensi" placeholder="Nama" class="in" required></td></tr>
+			<tr><td><input type="text" name="pj" class="in" placeholder="Penanggung Jawab" required></td></tr>
+			<tr><td><input type="date" name="tanggal" placeholder="tanggal" class="in" required></td></tr>
+			<tr><td><input type="submit" value="Tambah" class="sub"></td></tr>
+		</table>				
+		</form>	
+	</div>
+	
 
 </body>
 </html>
