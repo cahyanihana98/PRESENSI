@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" type="text/css" href="Stylesheet02.css">
 <head>
 
 	<title> Registration Page </title>
@@ -7,18 +8,21 @@
 </head>
 <body>
 
-	<h2> Buat Akun Baru </h2></br>
-	<form action="daftar.php" method="post">
-		<label> Nama : </label>
-		<input type="text" name="name" class="form-control" required></br>
-		<label> PIN : </label>
-		<input type="password" name="pin" class="form-control" required>
-	</br>
-		<button type="submit" class="btn btn-primary"> Daftarkan </button>
-	</form>
-	</br>
-	    <label>Sudah punya akun ?</label>
-		<a href= "login.html"> Login </a>
+	<div class="tab" align="center">
+		<h2>Absensi</h2><br>
+		<h4 style="color: #949494;"> Mendaftar untuk menggunakan aplikasi ini </h4>
+		<form action="daftar.php" method="post">
+			<table>
+				<tr><td><input type="text" name="name" class="in" placeholder="Username" required></td></tr>
+				<tr><td><input type="password" name="pin" class="in" placeholder="Password" required></td></tr>
+				<tr><td><input type="submit" value="Sign Up" class="sub"></td></tr>
+			</table>		
+		</form>
+	</div>
 
+	<div class="tab" align="center">
+		<label style="font-size: 14px;">Sudah punya akun ?</label>
+		<a href= "login.html" class="link"> Login </a>
+	</div>
 </body>
 </html>
