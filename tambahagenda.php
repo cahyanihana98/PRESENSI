@@ -19,7 +19,7 @@
 	} else {
 		$in = "INSERT INTO agenda (id, namaagenda, pj, tanggal ) VALUES ('$id', '$npresensi', '$pj', '$tanggal')";
 		mysqli_query($connect, $in);
-    	header('Location: lihatagenda.php?status=sukses');
+    	header('Location: Look.php?status=sukses');
 	}
 
 ?>

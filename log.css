@@ -1,0 +1,98 @@
+.container{
+	position: fixed;
+	display: flex;
+	top: 30%;
+	left: 12%;
+	transform: translate(-12%);
+}
+
+.contents{
+	height: 350px;
+	width: 500px;
+	padding: 20px;
+	border-radius: 8px;
+	position: relative;
+	box-shadow: 0 20px 30px rgba(0,0,0,.3);
+	background-color: #fff;
+}
+
+.fontx{
+	font-weight: bold;
+}
+
+.image{
+	font-size: 50px;
+}
+
+.stringLog{
+	transform: translate(12%, -180%);
+	margin-bottom: -35px;
+	font-weight: 100px;
+	font-family: 'Rubik', sans-serif;
+}
+
+.Brand{
+	width: 150px;
+	height: 50px;
+	padding: 10px;
+	border-radius: 8px;
+	position: relative;
+	margin-top: 1%;
+	cursor: pointer;
+	z-index: 99;
+	background: #28a745;
+}
+
+.Brand .display-4 {
+	font-family: 'Viga', sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	color: #fff;
+}
+
+.pos{
+	transform: translate(73%, -90%);
+}
+
+@media (min-width: 992px){
+	.container{
+		top: 22%;
+		left: 65%;
+		transform: translate(0%);
+	}
+
+	.Brand{
+		transition: .6s,box-shadow 0.2s ease-in-out;
+		width: 150px;
+		height: 50px;
+		background-color: rgba(0,0,0,0);
+	}
+
+	.Brand .display-4 {
+		color: #111;
+	}
+
+	.Brand .display-4:hover {
+		color: #fff;
+	}
+
+	.Brand:hover{
+		box-shadow: 0 20px 30px rgba(0,0,0,.5);
+		background: #28a745;
+	}
+
+	
+
+	.card img{
+		transition: .6s,box-shadow 0.2s ease-in-out;
+	}
+
+	.card img:hover{
+		box-shadow: 0 20px 30px rgba(0,0,0,.3);
+		cursor: pointer;
+	}
+	
+	.pos{
+		transform: translate(74%, -90%);
+	}
+}

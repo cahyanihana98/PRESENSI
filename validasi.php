@@ -7,7 +7,7 @@
 
     	$user = $_POST['user'];
     	$pass = $_POST['pass'];
-    	$sql = "select * from usertable where pin = '$pass' and nama = '$user'";
+    	$sql = "select * from usertable where pin = '$pass'";
 
     	$cek = mysqli_num_rows($connect, $sql);
 
@@ -18,7 +18,7 @@
     	} else {
 
     		$_SESSION['user'] = $user;
-    		header("location:home.php");
+    		header("location:HalUtama.php");
     	}
 
 ?>
