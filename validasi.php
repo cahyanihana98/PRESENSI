@@ -2,15 +2,14 @@
 	
 	session_start();
 
-	$con = mysqli_connect('localhost', 'root', '');
-	mysqli_select_db($con, 'presensi');
+	include "connect.php";
   
 
     	$user = $_POST['user'];
     	$pass = $_POST['pass'];
     	$sql = "select * from usertable where pin = '$pass' and nama = '$user'";
 
-    	$cek = mysqli_num_rows($sql);
+    	$cek = mysqli_num_rows($connect, $sql);
 
     	if($cek > 0) {
 

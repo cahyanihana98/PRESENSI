@@ -1,26 +1,25 @@
 <?php
+	
+	session_start();
 
-
-	$con = mysqli_connect('localhost', 'root', '');
-	mysqli_select_db($con, 'presensi');
-
+	include "connect.php";
+	
+	$id		   = $_POST['id'];
 	$npresensi = $_POST['npresensi'];
-	$pj = $_POST['pj'];
-	$tanggal = $_POST['tanggal'];
+	$pj 	   = $_POST['pj'];
+	$tanggal   = $_POST['tanggal'];
 
-	$sql = "select * from agenda where namaagenda = '$npresensi'";
+	$sql = "select * from agenda where id = '$id'";
     
-	$result = mysqli_query($con, $sql);
+	$result = mysqli_query($connect, $sql);
 	$nm = mysqli_num_rows($result);
 
-	if($nm == true){
-		echo "<h2> Presensi telah ada </h2> </br><a href = 'lihatagenda.php'> Lihat </a>";
+	if ($nm == true) {
+		echo "<h2> ID Presensi telah ada </h2> </br><a href = 'lihatagenda.php'> Lihat </a>";
+	} else {
+		$in = "INSERT INTO agenda (id, namaagenda, pj, tanggal ) VALUES ('$id', '$npresensi', '$pj', '$tanggal')";
+		mysqli_query($connect, $in);
+    	header('Location: lihatagenda.php?status=sukses');
 	}
-	else{
-		$in = "insert into agenda (namaagenda, pj, tanggal ) values ('$npresensi', '$pj', '$tanggal')";
-		mysqli_query($con, $in);
-		echo "<h2> Presensi Berhasil Dibuat </h2> </br> Silahkan <a href = 'lihatagenda.php'> Lihat </a>";
-	}
-
 
 ?>
