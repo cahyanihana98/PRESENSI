@@ -1,0 +1,72 @@
+body {
+	font-family: sans-serif;
+	background-color: #fafafa;
+}
+
+input.in {
+	padding: 10px;
+	margin-top: 10px;
+	width: 200px;
+	background-color: white;
+	border: 1px solid #ccc;
+	color :#c9c9c9;
+	border-color: #c9c9c9;
+	border-radius:3px;
+}
+
+input.sub {
+	padding: 10px;
+	margin-top: 10px;
+	width: 100px;
+	background-color: #3498eb;
+	color: white;
+	border: none;
+	border-color: #c9c9c9;
+	border-radius:3px;
+	margin-bottom: 10px;
+}
+
+input.sub:hover {
+	background-color: #63b4f7;
+	cursor: pointer;
+}
+
+.tab {
+	margin: auto;
+	width: 450px;
+	background-color:white; 
+	border: 1px solid #ccc;
+	margin-bottom: 20px;
+	padding: 30px;
+}
+
+.card {
+	margin: auto;
+	width: 200px;
+	background-color:#00b7ff; 
+	border: 1px solid #ccc;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	padding: 10px;	
+}
+
+a.link {
+	font-family: sans-serif;
+	color: rgb(0, 149, 246);
+	text-decoration: none;
+	font-size: 14px;
+}
+
+a.Menu{
+	font-family: sans-serif;
+	text-decoration: none;
+	font-size: 14px;
+	color: white;
+}
+
+.s311c {
+    width: 300px;
+    height: 10px;
+    border-bottom: 1px solid #ccc;
+    margin :auto;
+}

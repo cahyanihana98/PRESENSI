@@ -1,0 +1,44 @@
+body{
+	font-family:arial;
+	background-color: #FFFCC9;
+}
+
+h2.HEADING{
+	font-family:cocogoose;
+	font-size: 30px;
+	color: white;
+}
+
+input.in{
+	padding: 10px;
+	margin-top: 10px;
+	width: 200px;
+	background-color: #f2f2f2;
+	border: 10px;
+	color :#c9c9c9;
+	border-color: #c9c9c9;
+	border-radius:3px;
+}
+
+input.sub{
+	padding: 10px;
+	margin-top: 10px;
+	width: 100px;
+	background-color: #96E3FF;
+	color: white;
+	border: 10px;
+	border-color: #c9c9c9;
+	border-radius:3px;
+}
+
+input.sub:hover {
+	background-color: #4F9CB8;
+	cursor: pointer;
+}
+
+
+.Head{
+	padding: 20px;
+	margin-bottom: 30px;
+	background-color: lightblue;
+}
