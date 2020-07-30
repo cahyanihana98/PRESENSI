@@ -18,7 +18,7 @@
     	} else {
 
     		$_SESSION['user'] = $user;
-    		header("location:home.php");
+    		header("location:HalUtama.php");
     	}
 
 ?>
