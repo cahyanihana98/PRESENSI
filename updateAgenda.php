@@ -8,5 +8,5 @@
 	$tanggal = $_POST['tanggal'];
 	mysqli_query($connect, "UPDATE agenda SET namaagenda = '$nama', pj = '$pj', tanggal = '$tanggal' where id = '$id'");
 
-	header("location:lihatagenda.php?pesan=update");
+	header("location:Look.php?pesan=update");
 ?>
